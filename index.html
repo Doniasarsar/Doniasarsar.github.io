@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Donia Sarsar, ingénieure IA : LLM, RAG, agents IA et Data Engineering.">
+    <meta name="theme-color" content="#2c1639">
+    <title>Donia Sarsar | AI Engineer</title>
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="progress" id="progress"></div>
+
+    <header class="nav-wrap" id="nav">
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="#accueil" class="brand"><span class="brand-mark">D</span>Donia Sarsar</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false"><i
+                    class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+        <div class="orbs" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span
+                class="orb o3"></span></div>
+        <div class="grid-lines" aria-hidden="true"></div>
+
+        <div class="wrap hero-inner">
+            <div class="hero-text">
+                <span class="badge anim" style="--d:0.1s"><span class="pulse-dot"></span> Disponible immédiatement</span>
+                <h1 class="anim" style="--d:0.25s">Bonjour, je suis <span class="shimmer">Donia Sarsar</span></h1>
+                <p class="role anim" style="--d:0.4s"><span id="typed"></span><span class="caret"></span></p>
+                <p class="lead anim" style="--d:0.55s">Je conçois et déploie en production des solutions d'IA générative et
+                    des pipelines de données, du cadrage métier à la mise en production.</p>
+                <div class="hero-actions anim" style="--d:0.7s">
+                    <a href="#projets" class="btn btn-primary"><span>Voir mes projets</span> <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-ghost">Me contacter</a>
+                </div>
+                <div class="socials anim" style="--d:0.85s">
+                    <a href="https://www.linkedin.com/in/doniasarsar/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Doniasarsar" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:doniasarsar20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+33666424919" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-photo anim" style="--d:0.4s">
+                <div class="photo-ring"></div>
+                <div class="photo-frame"><img src="./assets/images/donia-utt.jpg" alt="Donia Sarsar" width="420"
+                        height="520"></div>
+                <div class="float-card fc-1"><i class="fas fa-users"></i>
+                    <div><b>80</b><span>experts utilisateurs</span></div>
+                </div>
+                <div class="float-card fc-2"><i class="fas fa-chart-line"></i>
+                    <div><b>23 → 82 %</b><span>recall du RAG</span></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#a-propos" class="scroll-hint" aria-label="Défiler vers le bas"><span></span></a>
+    </section>
+
+    <!-- Bandeau d'outils -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee"></div>
+    </div>
+
+    <main>
+        <!-- Chiffres clés -->
+        <section class="stats-band">
+            <div class="wrap stats">
+                <div class="stat reveal"><b data-count="80">80</b><span>experts utilisent mon assistant RAG au quotidien</span></div>
+                <div class="stat reveal"><b data-count="10000" data-suffix="+">10 000+</b><span>documents indexés</span></div>
+                <div class="stat reveal"><b data-count="2" data-suffix=" M">2 M</b><span>événements traités par jour</span></div>
+                <div class="stat reveal"><b data-count="70" data-suffix=" %">70 %</b><span>de délai de diagnostic en moins</span></div>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section class="section" id="a-propos">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">À propos</span>
+                    <h2>Ingénieure IA, de l'idée à la production</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>Ingénieure IA avec 2 ans d'expérience en Data &amp; IA, spécialisée dans la conception et le
+                            déploiement de solutions LLM/RAG en production. J'ai mené un projet de bout en bout, du
+                            cadrage métier à la mise en production : un assistant RAG utilisé quotidiennement par 80
+                            experts.</p>
+                        <p>J'ai aussi un solide socle en Data Engineering (pipelines temps réel, 2 M d'événements par
+                            jour) et en MLOps, et je construis des agents IA et des automatisations avec n8n.</p>
+                        <ul class="facts">
+                            <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                            <li><i class="fas fa-language"></i> Français et arabe (bilingue), anglais (courant)</li>
+                            <li><i class="fas fa-hands-helping"></i> Bénévolat : Rotaract, BIL'DERS LPE, Leo Club</li>
+                        </ul>
+                    </div>
+                    <div class="certs reveal">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li><i class="fas fa-cogs"></i><div><b>RNCP Bloc MLOps</b><span>DataScientest</span></div></li>
+                            <li><i class="fas fa-microchip"></i><div><b>Transformer-Based NLP</b><span>NVIDIA DLI</span></div></li>
+                            <li><i class="fas fa-project-diagram"></i><div><b>Data Science Workflows</b><span>NVIDIA DLI</span></div></li>
+                            <li><i class="fas fa-brain"></i><div><b>NLP Specialization</b><span>DeepLearning.AI</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section alt" id="competences">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Compétences</span>
+                    <h2>Les outils que j'utilise</h2>
+                </div>
+                <div class="skills-grid" id="skills-grid"></div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="section" id="projets">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Projets</span>
+                    <h2>Ce que j'ai construit</h2>
+                </div>
+                <div class="projects-grid" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- Expérience -->
+        <section class="section alt" id="experience">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Expérience</span>
+                    <h2>Mon parcours professionnel</h2>
+                </div>
+                <ol class="timeline" id="timeline">
+                    <li class="t-item reveal">
+                        <span class="t-dot"></span>
+                        <div class="t-card">
+                            <span class="date">Sept. 2025 – Sept. 2026</span>
+                            <h3>AI Engineer</h3>
+                            <p class="company">Hitachi Rail STS</p>
+                            <ul>
+                                <li>Assistant RAG en production utilisé par 80 experts sur 10 000+ documents (LangChain /
+                                    LangGraph, FastAPI, Next.js, Docker).</li>
+                                <li>Recall porté de 23 % à 82 % : recherche hybride FAISS + BM25, reranking, évaluation
+                                    sur 120 questions de référence.</li>
+                                <li>Ateliers de cadrage avec 12 experts métier, feuille de route IA présentée à la
+                                    direction.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="t-item reveal">
+                        <span class="t-dot"></span>
+                        <div class="t-card">
+                            <span class="date">Avr. 2025 – Sept. 2025</span>
+                            <h3>Data Engineer</h3>
+                            <p class="company">Hitachi Rail STS</p>
+                            <ul>
+                                <li>Pipeline temps réel de 2 M d'événements/jour (Elasticsearch, Logstash, Kibana,
+                                    Python).</li>
+                                <li>Détection d'anomalies sur séries temporelles : 15 comportements anormaux identifiés.
+                                </li>
+                                <li>Délai de diagnostic des incidents réduit de 70 % grâce aux dashboards et à
+                                    l'alerting.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="t-item reveal">
+                        <span class="t-dot"></span>
+                        <div class="t-card">
+                            <span class="date">Févr. 2024 – Juil. 2024</span>
+                            <h3>Data Scientist</h3>
+                            <p class="company">UIB – Groupe Société Générale</p>
+                            <ul>
+                                <li>Modèle de prédiction du churn (Random Forest, Gradient Boosting, MLP) : 85 % de
+                                    précision.</li>
+                                <li>1 200 clients à risque ciblés par mois.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="t-item reveal">
+                        <span class="t-dot"></span>
+                        <div class="t-card">
+                            <span class="date">Juin 2023 – Août 2023</span>
+                            <h3>Data Analyst</h3>
+                            <p class="company">Wevioo</p>
+                            <ul>
+                                <li>Data warehouse centralisé et ETL intégré à l'ERP financier.</li>
+                                <li>-60 % de temps de traitement et -25 % de coûts opérationnels (automatisation,
+                                    Power BI).</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Formation -->
+        <section class="section" id="formation">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Formation</span>
+                    <h2>Mon cursus</h2>
+                </div>
+                <div class="edu-grid">
+                    <article class="edu-card reveal">
+                        <img src="./assets/images/educat/college1.jpg" alt="Logo UTT" width="64" height="64">
+                        <span class="date">2025 – 2026</span>
+                        <h3>Mastère Spécialisé® Expert Big Data Engineer</h3>
+                        <p>Université de Technologie de Troyes (UTT)</p>
+                    </article>
+                    <article class="edu-card reveal">
+                        <img src="./assets/images/educat/ece.svg" alt="Logo ECE Paris" width="64" height="64">
+                        <span class="date">2024 – 2025</span>
+                        <h3>MSc Data Engineer</h3>
+                        <p>ECE Paris</p>
+                    </article>
+                    <article class="edu-card reveal">
+                        <img src="./assets/images/educat/school.jpg" alt="Logo ESPRIT" width="64" height="64">
+                        <span class="date">2019 – 2024</span>
+                        <h3>Diplôme d'Ingénieur en Informatique, spécialité Data Science</h3>
+                        <p>ESPRIT, Tunis</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="orbs" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span></div>
+            <div class="wrap contact-inner reveal">
+                <span class="eyebrow light">Contact</span>
+                <h2>Un projet IA ou data ?<br>Parlons-en.</h2>
+                <p>Je suis disponible immédiatement. Écris-moi, je réponds rapidement.</p>
+                <div class="hero-actions center">
+                    <a href="mailto:doniasarsar20@gmail.com" class="btn btn-light"><i class="fas fa-envelope"></i>
+                        doniasarsar20@gmail.com</a>
+                    <a href="tel:+33666424919" class="btn btn-ghost"><i class="fas fa-phone"></i> 06 66 42 49 19</a>
+                    <a href="https://www.linkedin.com/in/doniasarsar/" target="_blank" rel="noopener"
+                        class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/Doniasarsar" target="_blank" rel="noopener"
+                        class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <p>© <span id="year"></span> Donia Sarsar · Paris, France · <a class="foot-tel" href="tel:+33666424919">06 66 42 49 19</a></p>
+            <a href="#accueil" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
